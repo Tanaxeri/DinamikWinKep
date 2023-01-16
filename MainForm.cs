@@ -55,6 +55,7 @@ namespace DinamikWinKep
 
                         PictureBox picture = (PictureBox)o;
                         button.Image = picture.Image;
+                        picture.Image = images[random.Next(images.Count)];
 
                     };
                     TaroloPan.Controls.Add(pictureBox);
